@@ -1,0 +1,23 @@
+<div class="contenedor-principal">
+  <h2>Catálogo de Productos</h2>
+  
+  <div class="grid-productos">
+    <div class="tarjeta" *ngFor="let prod of listaProductos">
+      
+      <div class="imagen-wrapper">
+        <img [src]="prod.imagenUrl" [alt]="prod.nombre">
+      </div>
+      
+      <div class="contenido">
+        <h3>{{ prod.nombre }}</h3>
+        <p class="desc">{{ prod.descripcion }}</p>
+        
+        <div class="footer-tarjeta">
+          <span class="precio">{{ prod.precio | currency:'EUR' }}</span>
+          <button class="btn-comprar">Agregar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

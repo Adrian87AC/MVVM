@@ -1,0 +1,60 @@
+// Paleta de colores
+$footer-bg: #1c1c1c;
+$accent-color: #ffc107;
+
+// Footer principal
+.custom-footer {
+  background-color: $footer-bg;
+
+  .footer-brand {
+    font-size: 1.6rem;
+    font-weight: 700;
+
+    .footer-icon {
+      color: $accent-color;
+      font-size: 1.9rem;
+    }
+  }
+
+  .footer-desc {
+    opacity: 0.8;
+    line-height: 1.6;
+  }
+
+  .footer-links {
+    li {
+      margin-bottom: 0.4rem;
+
+      a {
+        color: rgba(255, 255, 255, 0.75);
+        text-decoration: none;
+        transition: 0.25s;
+
+        &:hover {
+          color: $accent-color;
+          padding-left: 4px;
+        }
+      }
+    }
+  }
+
+  .social-icons {
+    a {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 1.4rem;
+      margin-left: 0.6rem;
+      transition: 0.25s;
+
+      &:hover {
+        color: $accent-color;
+        transform: translateY(-3px);
+      }
+    }
+  }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+    opacity: 0.7;
+  }
+}

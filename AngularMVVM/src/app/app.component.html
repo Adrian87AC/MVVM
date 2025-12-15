@@ -1,0 +1,13 @@
+<app-header></app-header>
+<app-categorias></app-categorias>
+<div *ngIf="loading">
+  <h2>Datos Productos:</h2>
+  <pre>{{ productos | json }}</pre>
+</div>
+
+<div *ngIf="loading">
+  <h2>Datos Clientes:</h2>
+  <pre>{{ clientes | json }}</pre>
+</div>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
